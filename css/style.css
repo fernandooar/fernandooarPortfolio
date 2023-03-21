@@ -28,10 +28,10 @@ html{
 
 ::-webkit-scrollbar-thumb {
   border-radius: 35px;
-  background-color: #2054ff;
+  background-color: #407ff3;
 }
 body {
-  background-color: #000000;
+  background-color: #407ff3;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -165,8 +165,9 @@ li {
   border: 1px solid #202020;
   background-color: #080808;
   border-radius: 12px;
+  min-width: 360px;
   min-height: 800px;
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -206,9 +207,10 @@ li {
   column-gap: 10px;
   padding: 15px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .s-containerText {
+  border: 1px solid #44b164;
   width: 50%;
   display: flex;
   align-items: center;
@@ -224,7 +226,7 @@ li {
   gap: 10px;
 }
 .s-containerImg {
-  border: 1px solid #202020;
+  border: 1px solid #407ff3;
   background-color: #000000;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -241,10 +243,12 @@ li {
 
 .img-LogoChaves {
   width: 500px;
+  
   opacity: 0.5;
 }
 
 .contentIcons {  
+  border: 1px solid red;
   display: flex;
   width: 300px;
   align-items: center;
@@ -452,7 +456,7 @@ li {
 .containerMain04 {
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  row-gap: 20px;
   justify-content: center;
   align-items: center;
 }
