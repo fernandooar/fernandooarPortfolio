@@ -13,6 +13,10 @@
     opacity: 1;
   }
 }
+
+html{
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
   width: 18px;
 }
@@ -53,7 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .img-logoName,
@@ -67,8 +71,8 @@ li {
 .navbar li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.4em;
-  font-weight: 700;
+  font-size: 1.2em;
+  
 }
 
 .navbar {
@@ -94,7 +98,7 @@ li {
   border: 2px solid transparent;
   border-top-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  padding: 10px 12px;
+  padding: 8px 10px;
   transition: 0.5s ease;
 }
 
@@ -179,19 +183,18 @@ li {
 
 .strongStyle {
   color: #2054ff;
-  font-size: 1.8em;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 900;
+  font-size: 1.4em;
+  font-weight: 700;
 }
 
 .title-h1 {
   color: #2054ff;
-  font-size: 2.4em;
+  font-size: 2em;
 }
 
 .title-h2 {
   color: #407ff3;
-  font-size: 2em;
+  font-size: 1.6em;
 }
 
 .pointParagraph {
@@ -203,23 +206,24 @@ li {
   display: flex;
   flex-direction: row;
   column-gap: 10px;
-  padding: 25px;
+  padding: 15px;
   align-items: center;
   justify-content: center;
 }
-
 .s-containerText {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  justify-content: start;
+  padding: 10px;
 }
 .contentTextMain {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .s-containerImg {
   border: 1px solid #202020;
@@ -228,6 +232,7 @@ li {
   border-bottom-right-radius: 30px;
   width: 30%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   -webkit-transform: skew(15deg);
@@ -237,30 +242,37 @@ li {
 }
 
 .img-LogoChaves {
-  width: 600px;
+  width: 500px;
   opacity: 0.5;
 }
 
-.contentIcons {
+.contentIcons {  
   display: flex;
   width: 300px;
   align-items: center;
+  justify-content: center;
   margin-top: 40px;
 }
-
 .icon-GitHub {
   width: 66px;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-LinkEdin,
 .icon-Whatsapp {
   width: 60px;
   margin-left: 20px;
+  opacity: 0.5;
 }
-
 .icon-Instagran {
   width: 60px;
   margin-left: 20px;
+  opacity: 0.5;
 }
+
+
 /*-------------fim style containerMai01-------------*/
 
 /*-------------inicio style containerMai02-------------*/
@@ -426,12 +438,12 @@ li {
 
 .textCards {
   color: #6b84b3;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .btnCards {
-  width: 140px;
-  font-size: 1.2em;
+  width: 130px;
+  font-size: 1.1em;
   border-radius: 8px;
   padding: 10px 8px;
   background-color: #202020;
@@ -442,7 +454,7 @@ li {
 .containerMain04 {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -456,16 +468,16 @@ li {
 }
 .contentCard {
   background-color: #000000;
-  width: 380px;
-  height: 320px;
+  width: 350px;
+  height: 280px;
   border-bottom-right-radius: 12px;
   border-top-left-radius: 12px;
-  padding: 12px 15px;
+  padding: 10px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 20px;
+  row-gap: 15px;
 }
 
 .contentCard1 {
