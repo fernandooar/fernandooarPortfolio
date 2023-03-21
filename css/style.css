@@ -103,12 +103,11 @@ li {
 }
 
 .nav-link:hover {
-  color: #2054ff;
-  background-color: #ffffff;
+  color: #407ff3; 
   cursor: pointer;
   border-top-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  text-shadow: 0.5em 0.5em 0.5em #000000;
+  
 }
 .hamburguer {
   display: none;
@@ -120,8 +119,7 @@ li {
   width: 28px;
   height: 3px;
   border-radius: 2px;
-  margin: 5px auto;
-  background-color: #ffffff;
+  margin: 5px auto;  
   transition: all 0.3s ease-in-out;
 }
 
