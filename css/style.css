@@ -230,7 +230,7 @@ li {
   background-color: #000000;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -250,29 +250,24 @@ li {
 .contentIcons {  
   border: 1px solid red;
   display: flex;
-  width: 300px;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 200px;
+  align-items: end;
   justify-content: center;
   margin-top: 40px;
 }
-.icon-GitHub {
-  width: 66px;
-  opacity: 0.5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
+
+.icon-GitHub,
 .icon-LinkEdin,
-.icon-Whatsapp {
-  width: 60px;
-  margin-left: 20px;
-  opacity: 0.5;
-}
+.icon-Whatsapp,
 .icon-Instagran {
   width: 60px;
   margin-left: 20px;
   opacity: 0.5;
 }
+
 
 
 /*-------------fim style containerMai01-------------*/
