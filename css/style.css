@@ -31,8 +31,7 @@ html{
   background-color: #2054ff;
 }
 body {
-  background: rgb(32,84,255);
-background: linear-gradient(90deg, rgba(32,84,255,1) 0%, rgba(8,8,109,1) 23%, rgba(9,9,121,1) 74%, rgba(32,84,255,1) 100%);
+ background-color: #407ff3;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -167,10 +166,8 @@ li {
   border: 1px solid #202020;
   background-color: #080808;
   border-radius: 12px;
-  min-width: 360px;
-  min-height: 800px;
-  width: 90%;
-  height: auto;
+  width: 80%;
+  height: 740px;
 }
 
 .textStyle {
@@ -179,7 +176,6 @@ li {
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
   text-align: center;
-  border-radius: 20px;
 }
 
 .strongStyle {
@@ -188,6 +184,12 @@ li {
   font-weight: 700;
 }
 
+.myNameTitle{
+  color: #2054ff;
+  font-size: 2.4em;
+}
+
+.subTitle
 .title-h1 {
   color: #2054ff;
   font-size: 2em;
@@ -209,12 +211,13 @@ li {
   column-gap: 10px;
   padding: 15px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 20px;
 }
-.s-containerText {
-  
+.s-containerText {  
   width: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: start;
   padding: 10px;
@@ -225,14 +228,15 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  row-gap: 15px;
+ 
 }
 .s-containerImg {
   border: 1px solid #407ff3;
   background-color: #000000;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 30%;
+  width: 360px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -244,22 +248,19 @@ li {
 }
 
 .img-LogoChaves {
-  width: 500px;
-  
+  width: 400px;  
   opacity: 0.5;
 }
 
 .contentIcons {  
-  
   display: flex;
   flex-wrap: wrap;
   width: 350px;
   height: auto;
   align-items: end;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 10px;
 }
-
 
 .icon-GitHub,
 .icon-LinkEdin,
@@ -269,9 +270,6 @@ li {
   margin-left: 20px;
   opacity: 0.5;
 }
-
-
-
 /*-------------fim style containerMai01-------------*/
 
 /*-------------inicio style containerMai02-------------*/
@@ -301,7 +299,7 @@ li {
   background-color: #080808;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -325,7 +323,8 @@ li {
 }
 
 .img-myPhoto {
-  width: 340px;
+  width: 300px;
+  
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   transform: translateX(10px) rotate(10deg) translateY(5px);
@@ -370,7 +369,7 @@ li {
   background-color: #080808;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -459,7 +458,7 @@ li {
   align-items: center;
 }
 .s-containerCards {
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -745,7 +744,7 @@ li {
   }
 
   .img-devPreto {
-    width: 280px;
+    width: 240px;
   }
 
   .contentCard {
@@ -775,33 +774,55 @@ li {
     margin-left: 5px;
   }
 }
-@media (max-width: 358px) {
-  .img-logoName {
-    width: 200px;
-  }
-  .containerCards {
-    width: 320px;
+@media (max-width: 360px) {
+
+#sectionMain{
+  width: 100%;
+}
+.containerMain{
+    width: 100%;
+    height: auto;
   }
 
-  .textMain {
+  .title-h1{
+    font-size: 1.2em;
+  }
+
+  .textStyle{
     font-size: 1em;
   }
 
+  .title-h2{
+    font-size: 1.2em;
+  }
+  .img-logoName {
+    width: 180px;
+  }
+  .containerCards {
+    min-width: 300px;
+  }
+
+  .textMain {
+    font-size: 0.8em;
+  }
+
   .s-contentTextArea {
-    width: 100%;
-    padding: 15px 5px;
+    width: 98%;
+    padding: 5px;
   }
-
+  .s-containerImg{
+    width: 100px;
+  }
   .img-LogoChaves {
-    width: 280px;
-  }
-
-  .img-myPhoto {
     width: 200px;
   }
 
+  .img-myPhoto {
+    width: 180px;
+  }
+
   .img-devPreto {
-    width: 240px;
+    width: 200px;
   }
 }
 
