@@ -166,8 +166,7 @@ li {
   background-color: #080808;
   border-radius: 12px;
   width: 90%;
-  min-width: 380px;
-  min-height: 740px;
+ 
   
 }
 
@@ -504,89 +503,7 @@ li {
   border: 1px solid #e90e50;
 }
 /*-------------Fim style containerMain04-------------*/
-@media(max-width:1360px){
 
-  .subTitle{
-    font-size: 1.6em;
-  }
-
-  .containerMain01{
-    flex-direction: column;
-    row-gap: 35px;
-    padding: 25px 0;
-  }
-  .contentTextMain{
-    row-gap: 20px;
-  }
-
-  .tetxQuote{
-    font-size: 1.4em;
-  }
-  .s-containerText{
-    width: 90%;    
-  }
-
-  .textStyle{
-    text-align: center;
-  }
-
-  .containerMain02{
-    
-    padding: 25px 10px;
-    gap: 20px;
-  }
-  .textMain{
-    font-size: 1.2em;
-  }
-  .s-contentTextArea{
-    width: 65%;
-    padding: 15px 5px 15px 10px; 
-  }
-
-  .containerMain03{
-    flex-direction: column;
-  }
-
-  .contentMainCards{
-    width: 95%;
-  }
-
-}
-
-@media(max-width:1146px){
-  .s-containerCards{
-    width: 95%;
-  }
-}
-
-@media(max-width:1040px){
-
-  .containerMain03{
-    row-gap: 20px;
-  }
-
- .s-contentTextArea{
-  width: 95%;
-}
-
-.s-contentImg{
-  width: 250px;
-}
-.img-myPhoto{
-  width: 250px;
-}
-
-.img-Main03{
-  width: 95%;  
-  height: auto;
-  padding: 10px 0;
-  
-}
-
-.img-devPreto{
-  width: 300px;
-}
-}
 
 
 @media (max-width: 768px) {
@@ -611,6 +528,7 @@ li {
 
   .navbar {
     width: 100%;
+    height: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -628,7 +546,7 @@ li {
     opacity: 1;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: 0.3s;
     justify-content: center;
     align-items: center;
@@ -641,5 +559,132 @@ li {
 
   .nav-menu.active {
     left: 0;
+  }
+}
+
+
+@media(max-width:340px){
+  #sectionMain{    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+  }
+
+  
+#contentHeader {
+  margin-bottom: 30px;
+}
+  .containerMain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .s-containerText{
+   
+    margin: 0;
+    padding: 0;
+    width: 98%;
+  }
+
+  .myNameTitle{
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+
+  .subTitle{
+    font-size: 1em;
+  }
+  .mainSentence{
+    font-size: 1em;
+    
+  }
+
+  .s-containerImg{
+    width: 260px;
+    margin: 0 auto;
+  }
+  .img-LogoChaves{
+    width: 250px;
+  }
+
+
+  .containerMain02{
+    margin: 0;
+    padding: 0;
+  }
+  .s-contentImg{
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-myPhoto{
+    width: 200px;
+  }
+  .s-contentTextArea{
+    width: 98%;
+    padding: 10px;
+    margin: 0;
+  }
+  .textMain{
+    font-size: 0.8em;
+  }
+  .tetxQuote{
+    font-size: 1em;
+  }
+
+
+  .containerMain03{
+      margin: 0;
+      padding: 10px 0;
+    }
+
+  .img-Main03{
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;     
+    }
+  .img-devPreto{
+      width: 250px;
+    }
+  .contentMainCards{
+    width: 100%;
+    padding: 10px;
+  }
+  .containerCards{
+    width: 140px;
+    height: 120px;
+  }
+  .textStyle02{
+    font-size: 0.8em;
+  }
+
+  .containerMain04{
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  .s-containerCards{
+    width: 98%;
+  }
+  .contentCard{
+    width: 90%;
+    height: auto;
+  }
+  .titleCards{
+    font-size: 1.1em;
+  }
+
+  .textCards{
+    font-size: 1em;
+  }
+
+  .img-logoName{
+    width: 250px;
   }
 }
