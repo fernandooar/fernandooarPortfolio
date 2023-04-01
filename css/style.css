@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -30,7 +30,10 @@ html{
   background-color: #2054ff;
 }
 body {
- background-color: #407ff3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #090F31;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -38,7 +41,6 @@ body {
   transition: opacity 5s;
 }
 #sectionMain {
-  min-width: 320px;
   width: 100%;
   height: auto;
   display: flex;
@@ -48,9 +50,8 @@ body {
   row-gap: 50px;
 }
 
-#contentHeader {
-  border: 1px solid #202020;
-  background-color: #080808;
+#contentHeader {  
+  background-color: #002659;
   width: 100%;
   min-height: 70px;
   display: flex;
@@ -102,7 +103,7 @@ li {
 }
 
 .nav-link:hover {
-  color: #407ff3; 
+  color: #5450E5; 
   cursor: pointer;
   border-top-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -114,13 +115,21 @@ li {
 }
 
 .bar {
-  background-color: #407ff3;
+  background-color: #5450E5;
   display: block;
   width: 28px;
   height: 3px;
   border-radius: 2px;
   margin: 5px auto;  
   transition: all 0.3s ease-in-out;
+}
+
+
+.img-GitMenu, 
+.img-LinkEdinMenu,
+.img-InstagramMenu,
+.img-WhatsappMenu {
+  width: 40px;
 }
 
 #footer {
@@ -163,9 +172,9 @@ li {
 
 .containerMain {
   border: 1px solid #202020;
-  background-color: #080808;
+  background-color: #313E68;
   border-radius: 12px;
-  width: 90%;
+  width: 80%;
  
   
 }
@@ -184,13 +193,14 @@ li {
 }
 
 .myNameTitle{
+
   color: #2054ff;
   font-weight: 700;
   font-size: 2.6em;
 }
 
 .subTitle{
-  color: #407ff3;
+  color: #D9F39E;
   font-size: 2em;
 }
 
@@ -226,8 +236,8 @@ li {
  
 }
 .s-containerImg {
-  border: 1px solid #407ff3;
-  background-color: #000000;
+  border: 1px solid #211cd4;
+  background-color: #002659;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 360px;
@@ -238,12 +248,16 @@ li {
   -webkit-transform: skew(15deg);
   -ms-transform: skew(15deg);
   transform: skew(15deg);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px 1px rgba(0, 0 , 0, 0.35);
+  -webkit-backdrop-filter: blur(15px);
   padding: 10px 0;
 }
 
 .img-LogoChaves {
   width: 400px;  
-  opacity: 0.5;
+  
 }
 
 .contentIcons {  
@@ -291,7 +305,7 @@ li {
 }
 .s-contentTextArea {
   border: 1px solid #202020;
-  background-color: #080808;
+  background-color: #002659;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
   width: 60%;
@@ -312,13 +326,18 @@ li {
 }
 
 .s-contentImg {
-  
+  border: 1px solid #211cd4;
+  background-color: #002659;
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   width: 300px;
   display: flex;
   justify-content: center;
   transform: translateX(10px) rotate(10deg) translateY(5px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px 1px rgba(0, 0 , 0, 0.35);
+  -webkit-backdrop-filter: blur(15px);
   opacity: 0.5;
 }
 
@@ -352,6 +371,7 @@ li {
 }
 
 .img-Main03 {
+  border: 2px solid #020202;
   width: 30%;
   height: 550px;
   display: flex;
@@ -364,11 +384,11 @@ li {
 }
 
 .contentMainCards {
-  border: 1px solid #202020;
-  background-color: #080808;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  width: 40%;
+ 
+  background-color: #002659;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -466,7 +486,7 @@ li {
   gap: 20px 20px;
 }
 .contentCard {
-  background-color: #000000;
+  background-color: #18224A;
   width: 350px;
   height: 280px;
   border-bottom-right-radius: 12px;
@@ -504,10 +524,15 @@ li {
 }
 /*-------------Fim style containerMain04-------------*/
 
-
-
 @media (max-width: 768px) {
- 
+  #sectionMain{    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+  } 
 
   .hamburguer {
     display: block;
@@ -546,7 +571,7 @@ li {
     opacity: 1;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 60%;
     transition: 0.3s;
     justify-content: center;
     align-items: center;
@@ -560,10 +585,96 @@ li {
   .nav-menu.active {
     left: 0;
   }
+
+  .containerMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+
+  .s-containerText{   
+    margin: 0;
+    padding: 0;
+    width: 98%;
+  }
+
+  .myNameTitle{
+    font-size: 1.6em;
+    padding: 10px 0;
+  }
+
+  .subTitle{
+    font-size: 1.2em;
+  }
+  .mainSentence{
+    font-size: 1.2em;
+    
+  }
+
+  .s-containerImg{
+    width: 260px;
+    margin: 0 auto;
+  }
+  .img-LogoChaves{
+    width: 250px;
+  }
+
+  .img-myPhoto{
+    width: 200px;
+  }
+  .s-contentTextArea{
+    width: 100%;
+    padding: 10px 8px;
+  }
+
+  .textMain{
+    font-size: 1.2em;
+  }
+
+  .contentMainCards{
+    width: 98%;
+    padding: 10px 8px;
+  }
+
+  .containerMain04{
+    margin: 0;
+    padding: 15px 0;
+  }
+  .img-Main03{
+    margin: 0;
+    padding: 10px;
+    height: auto;
+  }
+  .img-devPreto{
+    width: 250px;
+  }
+  .s-containerCards{
+    width: 98%;
+  }
+  .contentCard{
+    width: 280px;
+    height: 230px;
+  }
+  .titleCards{
+    font-size: 1.1em;
+  }
+
+  .textCards{
+    font-size: 1em;
+  }
+
+  .img-logoName{
+    width: 250px;
+  }
 }
 
 
-@media(max-width:340px){
+@media(max-width:320px){
+
   #sectionMain{    
     width: 100%;
     display: flex;
@@ -571,12 +682,27 @@ li {
     justify-content: center;
     align-items: center;
     row-gap: 25px;
-  }
+  } 
 
-  
 #contentHeader {
   margin-bottom: 30px;
 }
+/* 
+.iconsMenu{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-GitMenu, 
+.img-LinkEdinMenu,
+.img-InstagramMenu,
+.img-WhatsappMenu {
+  width: 40px;
+} */
   .containerMain{
   width: 100%;
   display: flex;
@@ -584,8 +710,7 @@ li {
   justify-content: center;
   align-items: center;
   }
-  .s-containerText{
-   
+  .s-containerText{   
     margin: 0;
     padding: 0;
     width: 98%;
@@ -597,7 +722,7 @@ li {
   }
 
   .subTitle{
-    font-size: 1em;
+    font-size: 1.2em;
   }
   .mainSentence{
     font-size: 1em;
@@ -616,6 +741,7 @@ li {
   .containerMain02{
     margin: 0;
     padding: 0;
+    height: auto;
   }
   .s-contentImg{
     padding: 0;
@@ -636,7 +762,6 @@ li {
   .tetxQuote{
     font-size: 1em;
   }
-
 
   .containerMain03{
       margin: 0;
